@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>何 阿珠媽的逆襲</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@600;900&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6ebe3;--card:#fffaf6;--ink:#3a1c1a;--mute:#7a5a52;--line:#ebd2c6;--acc:#b02a22;--accsoft:#f9ddd5;--warn:#8a5200;--warnsoft:#fdecc9;--hd:#a82a20;--amber:#e08a1e;color-scheme:light;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#241515;--card:#311d1c;--ink:#f7e8df;--mute:#c7a99d;--line:#4a2d2a;--acc:#ff7b61;--accsoft:#4a2622;--warn:#f0b868;--warnsoft:#3a2b14;--hd:#7d1f19;--amber:#f0a24a;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#241515;--card:#311d1c;--ink:#f7e8df;--mute:#c7a99d;--line:#4a2d2a;--acc:#ff7b61;--accsoft:#4a2622;--warn:#f0b868;--warnsoft:#3a2b14;--hd:#7d1f19;--amber:#f0a24a;color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 15px/1.6 "Noto Sans TC",system-ui,-apple-system,"PingFang TC","Microsoft JhengHei",sans-serif;padding-bottom:84px}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--hd);z-index:10}
+main{max-width:640px;margin:0 auto;padding:0 16px}
+h1,h2,h3{font-family:"Noto Serif TC",Georgia,"PMingLiU",serif;margin:0}
+header{position:relative;overflow:hidden;background:var(--hd);color:#fff;margin:0 -16px 8px;padding:30px 20px 24px;border-radius:0 0 22px 22px}
+header .dates,header .sub,header h1,.count{position:relative}
+header .dates{opacity:.85;font-size:13px}
+header h1{font-size:32px;font-weight:900;line-height:1.25;margin:6px 0;max-width:70%}
+header .sub{opacity:.9}
+.count{display:inline-block;margin-top:12px;background:rgba(255,255,255,.2);color:#fff;padding:3px 12px;border-radius:99px;font-size:13px;font-weight:500}
+.lf{position:absolute;fill:currentColor}
+.l1{right:12px;top:10px;width:84px;height:84px;color:#f2a33a;transform:rotate(18deg)}.l2{right:92px;top:58px;width:44px;height:44px;color:#e0612f;transform:rotate(-24deg)}.l3{right:30px;bottom:6px;width:36px;height:36px;color:#ffd08a;transform:rotate(40deg)}.l4{right:120px;top:12px;width:26px;height:26px;color:#f7c15f;transform:rotate(-8deg)}
+ul.plain li{flex-wrap:wrap}
+section.tab{display:none}section.tab.on{display:block}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;margin:12px 0}
+.card h3{font-size:17px;margin-bottom:8px}
+.days{display:flex;gap:8px;overflow-x:auto;padding:6px 0 4px;position:sticky;top:env(safe-area-inset-top,0px);background:var(--bg);z-index:5}
+.days button{flex:0 0 auto;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:12px;padding:6px 12px;font:inherit;font-size:13px;text-align:center;line-height:1.3;cursor:pointer}
+.days button b{display:block;font-size:15px}
+.days button.on{background:var(--acc);border-color:var(--acc);color:var(--bg)}
+.dayhead h2{font-size:24px;margin:14px 0 2px}.dayhead p{margin:0;color:var(--mute);font-size:13px}
+ol.tl{list-style:none;margin:10px 0 0;padding:0 0 0 18px;border-left:2px solid var(--line)}
+ol.tl li{position:relative;padding:2px 0 14px 14px}
+ol.tl li::before{content:"";position:absolute;left:-27px;top:6px;width:16px;height:16px;background:var(--amber);clip-path:polygon(50% 4%,57% 19%,65% 13%,65% 33%,80% 27%,76% 45%,96% 43%,84% 59%,91% 72%,63% 69%,54% 78%,53% 98%,47% 98%,46% 78%,37% 69%,9% 72%,16% 59%,4% 43%,24% 45%,20% 27%,35% 33%,35% 13%,43% 19%)}
+ol.tl li.food::before{background:var(--acc)}
+ol.tl .t{font-size:12px;color:var(--mute)}
+ol.tl .n{font-weight:500}
+ol.tl .d{font-size:13px;color:var(--mute)}
+.tag{display:inline-block;font-size:12px;padding:0 8px;border-radius:99px;background:var(--accsoft);color:var(--acc);margin-right:4px}
+.tag.w{background:var(--warnsoft);color:var(--warn)}
+a{color:var(--acc)}
+.go{display:inline-block;margin-left:8px;font-size:12px;padding:1px 10px;border-radius:99px;background:var(--accsoft);color:var(--acc);text-decoration:none;font-weight:500;white-space:nowrap}
+.note{background:var(--warnsoft);color:var(--warn);border-radius:10px;padding:8px 12px;font-size:13px;margin:10px 0}
+.flight{display:grid;grid-template-columns:auto 1fr 1fr;gap:2px 12px;font-size:14px}
+.flight .k{color:var(--mute);font-size:12px}
+label.f{display:block;font-size:12px;color:var(--mute);margin-top:8px}
+input[type=text],input[type=number]{width:100%;font:inherit;font-size:16px;padding:8px 10px;border:1px solid var(--line);border-radius:10px;background:var(--bg);color:var(--ink)}
+input:focus-visible,button:focus-visible,a:focus-visible{outline:2px solid var(--acc);outline-offset:2px}
+.row{display:flex;gap:8px}.row>*{flex:1}
+.btn{border:0;background:var(--acc);color:var(--bg);font:inherit;font-weight:500;border-radius:10px;padding:8px 14px;cursor:pointer;flex:0 0 auto}
+.btn.ghost{background:transparent;color:var(--mute);border:1px solid var(--line)}
+.res{font-family:"Noto Serif TC",serif;font-size:30px;font-weight:900;margin:8px 0 0}
+.res small{font-size:13px;font-family:"Noto Sans TC",sans-serif;font-weight:400;color:var(--mute);display:block}
+ul.plain{list-style:none;margin:0;padding:0}
+ul.plain li{display:flex;align-items:center;gap:10px;padding:8px 0;border-bottom:1px solid var(--line)}
+ul.plain li:last-child{border:0}
+ul.plain li span.g{flex:1}
+ul.plain li.done span.g{text-decoration:line-through;color:var(--mute)}
+ul.plain input[type=checkbox]{width:20px;height:20px;accent-color:var(--acc)}
+.x{background:none;border:0;color:var(--mute);font-size:18px;cursor:pointer;padding:0 6px}
+.big{font-size:28px;font-weight:700;font-family:"Noto Serif TC",serif}
+nav{position:fixed;left:0;right:0;bottom:0;display:flex;background:var(--card);border-top:1px solid var(--line);padding:6px 4px calc(6px + env(safe-area-inset-bottom,0px));z-index:20}
+nav button{flex:1;border:0;background:none;color:var(--mute);font:inherit;font-size:12px;padding:4px 0;cursor:pointer}
+nav button span{display:block;font-size:20px;line-height:1.2}
+nav button.on{color:var(--acc);font-weight:700}
+@media (prefers-reduced-motion:no-preference){section.tab.on{animation:in .2s ease-out}@keyframes in{from{opacity:.4}to{opacity:1}}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="mp" viewBox="0 0 100 100"><polygon points="50,4 57,19 65,13 65,33 80,27 76,45 96,43 84,59 91,72 63,69 54,78 53,98 47,98 46,78 37,69 9,72 16,59 4,43 24,45 20,27 35,33 35,13 43,19"/></symbol></svg>
+<main>
+<header>
+<svg class="lf l1" viewBox="0 0 100 100" aria-hidden="true"><use href="#mp"/></svg><svg class="lf l2" viewBox="0 0 100 100" aria-hidden="true"><use href="#mp"/></svg><svg class="lf l3" viewBox="0 0 100 100" aria-hidden="true"><use href="#mp"/></svg><svg class="lf l4" viewBox="0 0 100 100" aria-hidden="true"><use href="#mp"/></svg>
+  <div class="dates">2026.11.18（三）至 11.23（一）</div>
+  <h1>何 阿珠媽的逆襲</h1>
+  <div class="sub">首爾 6 天 5 夜　弘大・明洞・聖水洞・蠶室</div>
+  <div class="count" id="count"></div>
+</header>
+
+<section class="tab on" id="t-plan">
+  <div class="days" id="days"></div>
+  <div id="day"></div>
+  <div class="card"><h3>航班</h3>
+    <div class="flight">
+      <div class="k">去程 11/18</div><div><div class="k">KE2032 起飛</div>17:50</div><div><div class="k">抵達仁川 T2</div>21:35</div>
+      <div class="k">回程 11/23</div><div><div class="k">KE2031 起飛</div>14:15</div><div><div class="k">抵達</div>16:25</div>
+    </div>
+    <div class="note">回程建議 11:30 前抵達機場，飯店最晚 9:30 出發。</div>
+  </div>
+  <div class="card"><h3>住宿</h3>
+    <div class="d" style="color:var(--mute);font-size:13px">名稱和地址會存在這支手機的瀏覽器裡。</div>
+    <b>住宿 1（11/18 至 11/20，2 晚）</b>
+    <label class="f">名稱</label><input type="text" data-save="h1n">
+    <label class="f">地址</label><input type="text" data-save="h1a">
+    <div class="d" style="font-size:13px;color:var(--mute);margin-top:4px">入住 15:00 起，退房 12:00 前</div>
+    <hr style="border:0;border-top:1px solid var(--line);margin:14px 0">
+    <b>住宿 2（11/20 至 11/23，3 晚）</b>
+    <label class="f">名稱</label><input type="text" data-save="h2n">
+    <label class="f">地址</label><input type="text" data-save="h2a">
+    <div class="d" style="font-size:13px;color:var(--mute);margin-top:4px">入住 15:00 起，退房 11:00 前</div>
+  </div>
+</section>
+
+<section class="tab" id="t-money">
+  <div class="card"><h3>韓元換台幣</h3>
+    <label class="f">匯率：1 韓元 = 台幣</label>
+    <input type="number" id="rate" step="0.0001" value="0.022">
+    <div class="d" style="font-size:12px;color:var(--mute)">這是預設的概略匯率，請改成你當天的實際匯率。</div>
+    <div style="margin-top:8px"><a class="go" style="margin:0 8px 0 0" target="_blank" rel="noopener" href="https://www.google.com/finance/quote/KRW-TWD">查即時匯率</a><a class="go" style="margin:0" target="_blank" rel="noopener" href="https://rate.bot.com.tw/xrt?Lang=zh-TW">台灣銀行牌告</a></div>
+    <label class="f">韓元金額或算式，例如 12000+8500</label>
+    <input type="text" id="expr" inputmode="decimal" placeholder="0">
+    <div class="res" id="out">NT$ 0<small id="outk">₩ 0</small></div>
+  </div>
+  <div class="card"><h3>花費記錄</h3>
+    <div class="row"><input type="text" id="en" placeholder="項目"><input type="number" id="ek" placeholder="韓元" inputmode="numeric"><button class="btn" id="eadd">新增</button></div>
+    <ul class="plain" id="elist"></ul>
+    <div class="res" id="etotal"></div>
+  </div>
+</section>
+
+<section class="tab" id="t-food">
+  <div class="card"><h3>想吃清單</h3>
+    <div style="color:var(--mute);font-size:13px">每間店都有 Google 和 Naver 兩個導航按鈕。吃過的打勾。</div>
+    <ul class="plain" id="foods"></ul>
+  </div>
+  <div class="card"><h3>炸雞宵夜：離住宿最近的店</h3>
+    <div style="color:var(--mute);font-size:13px">距離是從住宿算的直線距離，營業時間請在地圖上確認。</div>
+    <div id="chk"></div>
+  </div>
+</section>
+
+<section class="tab" id="t-shop"><div id="shop"></div></section>
+
+<section class="tab" id="t-list">
+  <div class="card"><h3>行前清單</h3>
+    <ul class="plain" id="checks"></ul>
+    <div class="row" style="margin-top:10px"><input type="text" id="cn" placeholder="新增項目"><button class="btn" id="cadd">新增</button></div>
+  </div>
+  <div class="card"><h3>個人備忘錄</h3>
+    <textarea id="memo" rows="5" style="width:100%;font:inherit;font-size:16px;padding:8px 10px;border:1px solid var(--line);border-radius:10px;background:var(--bg);color:var(--ink)"></textarea>
+  </div>
+</section>
+
+<section class="tab" id="t-info">
+  <div class="card"><h3>入境手續</h3>
+    <p style="margin:0 0 6px"><b>電子入境卡</b>：出發前 3 天可開始填，有辦 SeS 自動通關則免填。<br><a href="https://www.e-arrivalcard.go.kr/portal/main/index.do" target="_blank" rel="noopener">e-Arrival Card 官網</a></p>
+    <p style="margin:0"><b>K-ETA</b>：台灣旅客暫免申請至 2026 年底。若需要申請，費用每人 10,300 韓元，要在出發前 3 天辦好。出發前請到官網再確認一次。<br><a href="https://www.k-eta.go.kr/portal/newapply/index.do" target="_blank" rel="noopener">K-ETA 官網</a></p>
+  </div>
+  <div class="card"><h3>天氣</h3>
+    <a href="https://www.weather.go.kr/w/index.do" target="_blank" rel="noopener">韓國氣象廳</a>　<a href="https://weather.naver.com/" target="_blank" rel="noopener">Naver 天氣</a>
+    <div class="d" style="color:var(--mute);font-size:13px">11 月下旬的首爾接近 0 到 10 度，早晚更冷，穿制服拍照請備暖暖包。</div>
+  </div>
+  <div class="card"><h3>緊急聯絡</h3>
+    <div class="row"><div><div class="big">112</div>警察</div><div><div class="big">119</div>消防、救護</div><div><div class="big">1330</div>旅遊諮詢</div></div>
+    <label class="f">駐韓代表部聯絡電話（請自行查官網填入）</label><input type="text" data-save="emg">
+  </div>
+  <div class="card"><h3>注意事項</h3>
+    <ul style="margin:0;padding-left:18px">
+      <li>肉類和肉製品（含泡麵調理包、香腸零食）不可攜入韓國。</li>
+      <li>手提行李的液體每瓶 100ml 以下，裝入透明夾鏈袋。</li>
+      <li>行動電源和鋰電池要放在隨身行李。</li>
+      <li>韓國電壓 220V，台灣的插頭要帶轉接頭。</li>
+      <li>手扶梯靠右站，和關西相反。</li>
+      <li>街上垃圾桶很少，垃圾帶回住處。</li>
+      <li>「Google」鈕會開 Google Maps 的大眾運輸路線。韓國的步行導航常不準，覺得怪就點「Naver」鈕，Naver Map 會搜尋該地點。</li>
+      <li>進賭場（七星）要帶護照，先決定好預算上限。</li>
+    </ul>
+  </div>
+</section>
+</main>
+
+<nav id="nav">
+  <button data-t="plan" class="on"><span>🗓</span>行程</button>
+  <button data-t="money"><span>₩</span>匯率</button>
+  <button data-t="food"><span>🍲</span>美食</button>
+  <button data-t="shop"><span>🛍</span>購物</button>
+  <button data-t="list"><span>✅</span>清單</button>
+  <button data-t="info"><span>ℹ️</span>資訊</button>
+</nav>
+
+<script>
+var DAYS=[
+{d:"11/18",w:"三",title:"抵達首爾",area:"仁川機場、弘大",items:[
+ {t:"17:50",n:"KE2032 起飛",d:"手提行李的液體和電池要符合規定"},
+ {t:"21:35",n:"抵達仁川機場 2 號航廈",d:"入境審查、領行李"},
+ {n:"搭計程車前往住宿",d:"深夜到達，直接搭計程車比較省事"},
+ {n:"宵夜：BHC 炸雞、橋村炸雞",food:1}]},
+{d:"11/19",w:"四",title:"明洞、南大門",area:"明洞、南大門",items:[
+ {n:"早餐",d:"還沒決定",food:1},
+ {n:"午餐：Mr. 西王水餃 梨大店",food:1},
+ {n:"明洞、南大門逛街"},
+ {n:"晚餐：禹傑說的那間",d:"請補上店名",food:1,warn:1}]},
+{d:"11/20",w:"五",title:"換住宿、聖水洞",area:"聖水洞、弘大",items:[
+ {n:"住宿 1 退房（12:00 前）",d:"行李可以先寄放"},
+ {n:"午餐：祖傳三代馬鈴薯排骨湯",food:1},
+ {n:"聖水洞逛街"},
+ {n:"住宿 2 入住（15:00 起）"},
+ {n:"晚餐：사위식당 성수",d:"章魚、大腸、蝦子",food:1},
+ {n:"宵夜：BHC 炸雞、橋村炸雞",d:"和第一天重複，要換一家嗎",food:1,warn:1}]},
+{d:"11/21",w:"六",title:"景福宮、南山",area:"景福宮、廣藏、東大門、南山",items:[
+ {n:"早餐：土俗村 蔘雞湯",d:"常排隊，建議早點到",food:1},
+ {n:"景福宮"},
+ {n:"午餐：廣藏市場",food:1},
+ {n:"東大門",d:"這天行程很滿，時間不夠可以先捨棄這裡",warn:1},
+ {n:"南山纜車、首爾塔",d:"天黑得早，建議傍晚上去看夜景"},
+ {n:"晚餐：Mokmyeoksan Horaengi",food:1},
+ {n:"宵夜：布帳馬車",d:"隨意逛逛",food:1}]},
+{d:"11/22",w:"日",title:"樂天世界、蠶室",area:"蠶室、三成",items:[
+ {n:"住宿步行到數位媒體城站"},
+ {n:"地鐵：數位媒體城站、新堂站、蠶室站"},
+ {n:"午餐：Bon Di BBQ",food:1},
+ {t:"11:00 至 16:00",n:"梨花制服租賃、樂天世界",d:"樂天世界塔、樂天免稅店也在這一帶"},
+ {n:"地鐵：蠶室站到三成站"},
+ {n:"星空圖書館"},
+ {n:"晚餐：Sinsa Kkotgedang 醬蟹",food:1,d:"建議先吃飯再去賭場"},
+ {n:"七星娛樂場",d:"要帶護照，先訂好預算上限",warn:1}]},
+{d:"11/23",w:"一",title:"回程",area:"仁川機場",items:[
+ {n:"早餐、整理行李"},
+ {t:"11:00 前",n:"退房",d:"住宿 2 最晚 11:00"},
+ {t:"11:30 前",n:"抵達仁川機場 2 號航廈",d:"退稅、託運、安檢要留時間"},
+ {t:"14:15",n:"KE2031 起飛"}]}
+];
+var FOODS=[["Mr. 西王水餃 梨大店",2],["祖傳三代馬鈴薯排骨湯",3],["사위식당 성수",3],["土俗村 蔘雞湯",4],["廣藏市場",4],["Mokmyeoksan Horaengi",4],["布帳馬車",4],["Bon Di BBQ",5],["Sinsa Kkotgedang 醬蟹",5],["BHC 炸雞",1],["橋村炸雞",1]];
+var CHECKS=["護照","電子入境卡（出發前 3 天可填）","確認 K-ETA 規定","網卡或 eSIM","交通卡（T-money）","韓元現金、信用卡","行動電源（放隨身）","轉接插頭（220V）","保暖衣物、暖暖包","下載 Naver Map、Kakao Map","住宿名稱和地址存在手機"];
+var $=function(s){return document.querySelector(s)};
+function lsGet(k,d){try{var v=localStorage.getItem(k);return v===null?d:JSON.parse(v)}catch(e){return d}}
+function lsSet(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}
+function esc(s){return String(s).replace(/[&<>]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;"}[c]})}
+function naver(q){return "https://map.naver.com/p/search/"+encodeURIComponent(q)}
+
+// countdown
+(function(){var s=new Date(2026,10,18),n=new Date();n.setHours(0,0,0,0);var d=Math.round((s-n)/864e5);
+$("#count").textContent=d>0?"距離出發還有 "+d+" 天":(d>=-5?"旅程進行中":"旅程結束")})();
+
+// tabs
+$("#nav").addEventListener("click",function(e){var b=e.target.closest("button");if(!b)return;
+document.querySelectorAll("nav button").forEach(function(x){x.classList.toggle("on",x===b)});
+document.querySelectorAll("section.tab").forEach(function(x){x.classList.toggle("on",x.id==="t-"+b.dataset.t)});window.scrollTo(0,0)});
+
+// map links
+var PLACES=[["住宿 1","@h1a"],["住宿 2","@h2a"],["前往住宿","@h1a"],["仁川機場","Incheon International Airport Terminal 2"],["西王水餃","미스터서왔만두 서울 서대문구 신촌역로 16"],["明洞","Myeongdong Shopping Street"],["祖傳三代","祖傳三代馬鈴薯排骨湯 Seongsu Seoul"],["사위식당","사위식당 성수"],["聖水洞","Seongsu-dong Seoul"],["土俗村","Tosokchon Samgyetang"],["景福宮","Gyeongbokgung Palace"],["廣藏市場","Gwangjang Market"],["東大門","Dongdaemun Design Plaza"],["首爾塔","N Seoul Tower"],["Mokmyeoksan","Mokmyeoksan Horaengi Seoul"],["數位媒體城站","Digital Media City Station"],["Bon Di","Bon Di BBQ Seoul"],["樂天世界","Lotte World"],["星空圖書館","Starfield Library COEX"],["Sinsa","Sinsa Kkotgedang Ganjang Gejang"],["七星","Seven Luck Casino COEX"],["退房","@h2a"]];
+var NU={"西王水餃":"https://pcmap.place.naver.com/restaurant/36670196/home"};
+var NV={"仁川機場":"인천국제공항 제2여객터미널","明洞":"명동","聖水洞":"성수동","土俗村":"토속촌삼계탕","景福宮":"경복궁","廣藏市場":"광장시장","東大門":"동대문디자인플라자","首爾塔":"N서울타워","數位媒體城站":"디지털미디어시티역","樂天世界":"롯데월드","星空圖書館":"별마당도서관","七星":"세븐럭카지노 코엑스점","Mokmyeoksan":"목명산방 남산타워점","西王水餃":"미스터서왔만두","祖傳三代":"소문난성수감자탕","Bon Di":"본디","Sinsa":"신사꽃게당 압구정로데오점"};
+function navLink(n){for(var i=0;i<PLACES.length;i++){if(n.indexOf(PLACES[i][0])>-1){var q=PLACES[i][1];if(q.charAt(0)==="@"){var el=document.querySelector('[data-save="'+q.slice(1)+'"]');q=el?el.value:""}if(!q)return "";var nq=NV[PLACES[i][0]]||q;return '<a class="go" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;travelmode=transit&amp;destination='+encodeURIComponent(q)+'">📍Google</a><a class="go" target="_blank" rel="noopener" href="'+(NU[PLACES[i][0]]||'https://map.naver.com/p/search/'+encodeURIComponent(nq))+'">🟢Naver</a>'}}return ""}
+
+// days
+var cur=lsGet("day",0);
+function renderDays(){
+ $("#days").innerHTML=DAYS.map(function(x,i){return '<button data-i="'+i+'" class="'+(i===cur?"on":"")+'"><b>Day '+(i+1)+'</b>'+x.d+'（'+x.w+'）</button>'}).join("");
+ var x=DAYS[cur];
+ $("#day").innerHTML='<div class="dayhead"><h2>'+esc(x.title)+'</h2><p>'+esc(x.area)+'</p></div><ol class="tl">'+x.items.map(function(it){
+  return '<li class="'+(it.food?"food":"")+'">'+(it.t?'<div class="t">'+esc(it.t)+'</div>':'')+'<div class="n">'+esc(it.n)+navLink(it.n)+'</div>'+(it.d?'<div class="d">'+(it.warn?'<span class="tag w">留意</span>':'')+esc(it.d)+'</div>':'')+'</li>'}).join("")+'</ol>';
+}
+$("#days").addEventListener("click",function(e){var b=e.target.closest("button");if(!b)return;cur=+b.dataset.i;lsSet("day",cur);renderDays()});
+renderDays();
+
+// saved text inputs
+var DEF={h1a:"25-7 World Cup-ro 11-gil 유호그라시아 202호, 서울, 首爾 04018, 南韓",h2a:"18-10 Maebongsan-ro 2an-gil 601호, 首爾, 首爾 03927, 南韓"};
+document.querySelectorAll("[data-save]").forEach(function(el){el.value=lsGet("s_"+el.dataset.save,"")||DEF[el.dataset.save]||"";el.addEventListener("input",function(){lsSet("s_"+el.dataset.save,el.value);renderDays()})});
+var memo=$("#memo");memo.value=lsGet("memo","");memo.addEventListener("input",function(){lsSet("memo",memo.value)});renderDays();
+
+// calculator
+function fmt(n){return Math.round(n).toLocaleString("en-US")}
+function calc(){
+ var r=parseFloat($("#rate").value)||0,s=$("#expr").value.replace(/[×x]/g,"*").replace(/÷/g,"/").replace(/,/g,"");
+ var v=0;if(/^[0-9+\-*/().\s]+$/.test(s)){try{v=Function('"use strict";return ('+s+')')()||0}catch(e){v=0}}
+ if(!isFinite(v))v=0;
+ $("#out").firstChild.textContent="NT$ "+fmt(v*r);$("#outk").textContent="₩ "+fmt(v);
+}
+$("#rate").value=lsGet("rate","0.022");
+$("#rate").addEventListener("input",function(){lsSet("rate",$("#rate").value);calc();renderExp()});
+$("#expr").addEventListener("input",calc);calc();
+
+// expenses
+var exp=lsGet("exp",[]);
+function renderExp(){
+ var r=parseFloat($("#rate").value)||0,t=0;
+ $("#elist").innerHTML=exp.map(function(e,i){t+=e.k;return '<li><span class="g">'+esc(e.n)+'</span><span>₩ '+fmt(e.k)+'</span><button class="x" data-i="'+i+'" aria-label="刪除">×</button></li>'}).join("")||'<li style="color:var(--mute)">還沒有記錄，先新增第一筆。</li>';
+ $("#etotal").innerHTML='₩ '+fmt(t)+'<small>約 NT$ '+fmt(t*r)+'</small>';
+}
+$("#eadd").addEventListener("click",function(){var n=$("#en").value.trim(),k=parseFloat($("#ek").value);if(!n||!(k>0))return;exp.push({n:n,k:k});lsSet("exp",exp);$("#en").value="";$("#ek").value="";renderExp()});
+$("#elist").addEventListener("click",function(e){var b=e.target.closest(".x");if(!b)return;exp.splice(+b.dataset.i,1);lsSet("exp",exp);renderExp()});
+renderExp();
+
+// foods
+var fdone=lsGet("fdone",{});
+function renderFood(){
+ $("#foods").innerHTML=FOODS.map(function(f,i){return '<li class="'+(fdone[i]?"done":"")+'"><input type="checkbox" data-i="'+i+'" '+(fdone[i]?"checked":"")+' aria-label="吃過了"><span class="g">'+esc(f[0])+navLink(f[0])+'</span><span class="tag">Day '+f[1]+'</span></li>'}).join("");
+}
+$("#foods").addEventListener("change",function(e){var c=e.target;if(c.type!=="checkbox")return;fdone[c.dataset.i]=c.checked;lsSet("fdone",fdone);renderFood()});
+renderFood();
+
+var CHK=[["住宿 1（Day 1 宵夜）",[["BHC치킨 합정점","BHC치킨 합정점","ChIJC-X8HQCZfDURAbGFaDGUKag","約 0.4 公里"],["교촌치킨 망원2동점","교촌치킨 망원2동점","ChIJYX7vSQeZfDURIh54cvcShFs","約 0.5 公里"],["Kyochon Chicken Hongdae","교촌치킨 홍대","ChIJOc4lEduYfDURupLmvgHXcMs","約 0.9 公里"]]],["住宿 2（Day 3 宵夜）",[["교촌치킨 상암점","교촌치킨 상암점","ChIJaXiZ4g2ZfDUR6T48w1h2DFE","約 0.1 公里"],["BHC치킨 디지털미디어시티점","BHC치킨 디지털미디어시티점","ChIJm6L3pGCZfDURPRn-tFeplz8","約 1.2 公里"],["성산2동점교촌치킨","성산2동점교촌치킨","ChIJY0jkXRmZfDURaiU2bs67XxA","約 1.3 公里"]]]];
+var SHOP=[["Olive Young 美妝連鎖（行程經過的區域）",[["弘大・合井","Day 1、住宿 1 附近","Olive Young Hongdae","올리브영 홍대"],["明洞","Day 2","Olive Young Myeongdong Flagship","올리브영 명동 플래그십"],["聖水洞","Day 3","Olive Young N Seongsu","올리브영 N성수"],["東大門","Day 4","Olive Young Dongdaemun","올리브영 동대문"],["蠶室・樂天","Day 5","Olive Young Jamsil","올리브영 잠실"],["COEX","Day 5","Olive Young COEX Mall","올리브영 코엑스"]]],["聖水洞潮牌（Day 3）",[["ADER ERROR 아더에러","","ADER ERROR Seongsu","아더에러 성수"],["thisisneverthat 디스이즈네버댓","","thisisneverthat Seongsu","디스이즈네버댓 성수"],["Matin Kim 마뗑킴","","Matin Kim Seongsu","마뗑킴 성수"],["Tamburins 탬버린즈","","Tamburins Seongsu","탬버린즈 성수"],["Andersson Bell 앤더슨벨","","Andersson Bell Seongsu","앤더슨벨 성수"]]],["弘大潮牌（Day 1、住宿 1 附近）",[["NERDY 널디","","NERDY Hongdae","널디 홍대"],["COVERNAT 커버낫","","Covernat Hongdae","커버낫 홍대"],["MUSINSA STANDARD 무신사 스탠다드","","Musinsa Standard Hongdae","무신사 스탠다드 홍대"],["GENTLE MONSTER 젠틀몬스터","","Gentle Monster Hongdae","젠틀몬스터 홍대"]]]];
+function gb(q,id){return '<a class="go" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query='+encodeURIComponent(q)+(id?'&amp;query_place_id='+id:'')+'">📍Google</a>'}
+function nb(q){return '<a class="go" target="_blank" rel="noopener" href="https://map.naver.com/p/search/'+encodeURIComponent(q)+'">🟢Naver</a>'}
+function renderChk(){$("#chk").innerHTML=CHK.map(function(h){return '<b>'+esc(h[0])+'</b><ul class="plain">'+h[1].map(function(s){return '<li><span class="g">'+esc(s[0])+'<br><small style="color:var(--mute)">'+(CNK[s[2]]?esc(CNK[s[2]])+'　':'')+'直線 '+esc(s[3])+'</small></span>'+gb(s[0],s[2])+nb(s[1])+'</li>'}).join("")+'</ul>'}).join("")}
+function renderShop(){$("#shop").innerHTML='<div class="note" style="background:var(--accsoft);color:var(--acc)">這些是搜尋連結，會列出該區的分店或門市。店面可能搬遷，請以地圖顯示為準。</div>'+SHOP.map(function(g){return '<div class="card"><h3>'+esc(g[0])+'</h3><ul class="plain">'+g[1].map(function(s){return '<li><span class="g">'+esc(s[0])+((CN[s[0].split(" ")[0]]||s[1])?'<br><small style="color:var(--mute)">'+esc(CN[s[0].split(" ")[0]]||s[1])+'</small>':'')+'</span>'+gb(s[2])+nb(s[3])+'</li>'}).join("")+'</ul></div>'}).join("")}
+var CN={ADER:"韓國設計品牌，聖水洞有旗艦店",thisisneverthat:"韓國街頭品牌",Matin:"韓國女裝品牌",Tamburins:"韓國香氛・護手霜品牌",Andersson:"韓國設計師品牌",NERDY:"韓國街頭品牌",COVERNAT:"韓國街頭品牌",MUSINSA:"韓國潮流平台的平價基本款",GENTLE:"韓國眼鏡・太陽眼鏡品牌"};
+var CNK={"ChIJC-X8HQCZfDURAbGFaDGUKag":"BHC 炸雞 合井店","ChIJYX7vSQeZfDURIh54cvcShFs":"橋村炸雞 望遠2洞店","ChIJOc4lEduYfDURupLmvgHXcMs":"橋村炸雞 弘大店","ChIJaXiZ4g2ZfDUR6T48w1h2DFE":"橋村炸雞 上岩店","ChIJm6L3pGCZfDURPRn-tFeplz8":"BHC 炸雞 數位媒體城店","ChIJY0jkXRmZfDURaiU2bs67XxA":"橋村炸雞 城山2洞店"};
+SHOP.splice(1,0,
+["逛街點（依每天行程）",[["弘大購物街","Day 1、住宿 1 附近","Hongdae Shopping Street","홍대 걷고싶은거리"],["明洞購物街","Day 2，美妝、服飾、街邊小吃","Myeongdong Shopping Street","명동거리"],["樂天免稅店 明洞本店","Day 2，記得帶護照和登機資料","Lotte Duty Free Myeongdong","롯데면세점 명동본점"],["新世界百貨 本店","Day 2，南大門、明洞附近","Shinsegae Department Store Main Store","신세계백화점 본점"],["南大門市場","Day 2","Namdaemun Market","남대문시장"],["聖水洞 연무장길（選物店、潮牌街）","Day 3","Seongsu Yeonmujang-gil","성수 연무장길"],["仁寺洞","Day 4，景福宮附近，伴手禮和傳統小物","Insadong","인사동"],["東大門設計廣場 DDP","Day 4","Dongdaemun Design Plaza","동대문디자인플라자"],["樂天世界購物中心","Day 5，樂天世界旁","Lotte World Mall","롯데월드몰"],["COEX Mall（星空圖書館所在）","Day 5","COEX Mall","코엑스몰"]]],
+["指定潮牌清單",[["Verish Anguk Flagship Store","베리시 安國旗艦店，Day 4 景福宮附近","Verish Anguk Flagship Store","베리시 안국 플래그십 스토어"],["Chaakan Shoes","Chaakan 鞋履品牌","Chaakan Shoes Seoul","Chaakan Shoes"],["apM Place Shopping Centre","apM Place 購物中心，東大門，Day 4","apM Place Dongdaemun","apM Place 동대문"],["Onitsuka Tiger","鬼塚虎，日本運動鞋品牌","Onitsuka Tiger Seoul","오니츠카타이거"],["JUUNEEDU PAJAMAS BOUTIQUE","JUUNEEDU 睡衣精品店","JUUNEEDU Pajamas Boutique Seoul","JUUNEEDU"],["National Geographic","國家地理，戶外服飾","National Geographic Apparel Seoul","내셔널지오그래픽"],["snow peak","雪峰，日本露營品牌","Snow Peak Seoul","스노우피크"],["MARITHÉ FRANÇOIS GIRBAUD","牛仔與街頭服飾品牌，常簡稱 Marithé","Marithe Francois Girbaud Seoul","마리떼프랑소와저버"],["Covernat","韓國街頭品牌，弘大有店","Covernat Hongdae","커버낫 홍대"],["Ader Error","韓國設計品牌，聖水洞有旗艦店","ADER ERROR Seongsu","아더에러 성수"],["SATUR","SATUR 韓國品牌","SATUR Seoul","SATUR"],["CUEREN","CUEREN 潮牌","CUEREN Seoul","CUEREN"]]],
+["香水專區",[["Tamburins","韓國香氛・護手霜品牌，聖水洞","Tamburins Seongsu","탬버린즈 성수"],["GRANHAND","韓國香水品牌（그랑핸드）","Granhand Seoul","그랑핸드"],["Le Labo","美國小眾香水，可現場調製","Le Labo Seoul","르라보"],["Diptyque","蒂普提克，法國香氛","Diptyque Seoul","딥티크"],["L’Artisan Parfumeur","阿蒂仙之香，法國香水","L'Artisan Parfumeur Seoul","L'Artisan Parfumeur"]]]);
+renderChk();renderShop();
+
+// checklist
+var custom=lsGet("custom",[]),cdone=lsGet("cdone",{});
+function allChecks(){return CHECKS.concat(custom)}
+function renderChecks(){
+ $("#checks").innerHTML=allChecks().map(function(c,i){var cu=i>=CHECKS.length;return '<li class="'+(cdone[c]?"done":"")+'"><input type="checkbox" data-c="'+esc(c)+'" '+(cdone[c]?"checked":"")+' aria-label="完成"><span class="g">'+esc(c)+'</span>'+(cu?'<button class="x" data-i="'+(i-CHECKS.length)+'" aria-label="刪除">×</button>':'')+'</li>'}).join("");
+}
+$("#checks").addEventListener("change",function(e){var c=e.target;if(c.type!=="checkbox")return;cdone[c.dataset.c]=c.checked;lsSet("cdone",cdone);renderChecks()});
+$("#checks").addEventListener("click",function(e){var b=e.target.closest(".x");if(!b)return;custom.splice(+b.dataset.i,1);lsSet("custom",custom);renderChecks()});
+$("#cadd").addEventListener("click",function(){var v=$("#cn").value.trim();if(!v)return;custom.push(v);lsSet("custom",custom);$("#cn").value="";renderChecks()});
+renderChecks();
+</script>
+</body>
+</html>
